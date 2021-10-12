@@ -145,10 +145,10 @@ class Maze():
         row = 10
         num = 0
 
-        color  = [random.choice(xrange(255)), random.choice(xrange(255)), random.choice(xrange(255))]
+        color  = [random.choice(range(255)), random.choice(range(255)), random.choice(range(255))]
 
-        for y in xrange(40):
-            for x in xrange(60):
+        for y in range(40):
+            for x in range(60):
                 Node(self, [row, col], num, color)
                 row += 10
                 num += 1
@@ -166,7 +166,7 @@ class Maze():
         current = self.node_list[0]
         visited = 1
 
-        for i in xrange(3600):
+        for i in range(3600):
             try:
                 neighbors = []
                 for key, value in current.neighbors.iteritems():

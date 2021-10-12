@@ -37,8 +37,8 @@ class Game():
         row = 50
         cell_num = 0
 
-        for y in xrange(44):
-            for x in xrange(74):
+        for y in range(44):
+            for x in range(74):
                 cell_num +=1
                 cell = Cell(self, [col, row], cell_num)
                 if row == 50 or row  == 480 or col == 0 or col == 730:
